@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Automation - Amazon" thread-count="5"	parallel="tests">
+
+	<listeners>
+		<listener class-name="com.qa.utility.Reporting"></listener>
+
+	</listeners>
+
+	<parameter name="Url" value="https://www.amazon.in/"></parameter>
+	<test thread-count="5" name="Functional Testing - Chrome">
+		<parameter name="Browser" value="Chrome"></parameter>
+		<classes>
+			<class name="com.qa.testscripts.TC_Amazon_001" />
+			<class name="com.qa.testscripts.TC_Amazon_002" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

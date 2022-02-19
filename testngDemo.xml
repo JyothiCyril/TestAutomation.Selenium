@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Testing - Internet Banking application">
+  <test thread-count="5" name="Functional Test">
+    <classes>
+      <class name="com.qa.testNGDemo.TC_FundTransfer_001"/>
+      <class name="com.qa.testNGDemo.TC_UtilityBillPayment_002"/>
+      <class name="com.qa.testNGDemo.TC_CCBillPayment_003"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
